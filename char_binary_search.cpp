@@ -22,14 +22,13 @@ int main(){
 	char arr[14] = {'a', 'c', 'd', 'f', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q'};
 	char key;
 	cout<<"enter the key to find: "<<endl; cin>>key;
-	int size = sizeof(arr)/sizeof(arr[0]); cout<<"size is: "<<size<<endl; // extra can be removed later
+	int size = sizeof(arr)/sizeof(arr[0]);
 	int res = binary_search(arr, key, size);
 	if (res == -1){
 		cout<<"Not Found!!";
 	}else{
 		cout<<"The element is at index: "<<res;
 	}
-	
 	
 	
 	return 0;
